@@ -1,5 +1,5 @@
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import WebFormLayout from '@/Layouts/WebFormLayout.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
 
@@ -7,7 +7,7 @@ import { Head } from '@inertiajs/vue3';
 
     <Head title="Web Form" />
 
-    <AuthenticatedLayout>
+    <WebFormLayout>
         <template #header>
             <h1 class="font-semibold text-xl text-gray-800 leading-tight">Web Form</h1>
         </template>
@@ -75,7 +75,7 @@ import { Head } from '@inertiajs/vue3';
                 </div>
             </div>
         </form>
-    </AuthenticatedLayout>
+    </WebFormLayout>
 </template>
 
 <script>

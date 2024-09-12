@@ -16,9 +16,5 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome');
-});
-
-Route::get('/web-form', function () {
     return Inertia::render('WebForm');
-})->middleware(['auth', 'verified'])->name('web-form');
+});
