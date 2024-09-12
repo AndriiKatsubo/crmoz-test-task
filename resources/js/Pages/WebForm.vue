@@ -33,8 +33,10 @@ import { Head } from '@inertiajs/vue3';
                                     <label for="deal-stage"
                                         class="block text-sm font-medium leading-6 text-gray-900">Stage</label>
                                     <div class="mt-2">
-                                        <input type="text" name="deal-stage" id="deal-stage" v-model="dealStage"
-                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                        <select v-model="dealStage" id="deal-select"
+                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                            <option v-for="ds in dealStages" :key="ds" :value="ds">{{ ds }}</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
